@@ -1,0 +1,194 @@
+/* Reset and Global Styles */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Bree Serif", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fde9e9;
+}
+
+/* Typography */
+h1 {
+  font-size: 6rem;
+  color: #F2C8C2;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h6 {
+  font-size: 2rem;
+  color: #F2C8C2;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: -10px;
+}
+
+p {
+  color: #333;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  font-weight: 300;
+  margin-top: 5px;
+  letter-spacing: 0.05rem;
+  text-align: center;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: #E6C3C3;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #FCCAD5;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  color: white;
+  background-color: #E6C3C3;
+  border: 2px solid #E6C3C3;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-top: 30px;
+  transition: 0.3s ease;
+  transition-property: background-color, color;
+  margin-right: 20px; /* Moved to the right as per your previous request */
+}
+
+.btn:hover {
+  color: white;
+  background-color: #EFBCD2;
+}
+
+.logo h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: white;
+}
+
+.logo h1 span {
+  color: #E6C3C3;
+}
+
+/* Home Section */
+#home {
+  background-image: url("back.webp");
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+  z-index: 1;
+}
+
+#home::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #ea52b0;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+#home .home {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 50px;
+  justify-content: flex-start;
+}
+
+#home h1 {
+  display: block;
+  width: fit-content;
+  font-size: 4rem;
+  position: relative;
+  color: transparent;
+  animation: text_reveal 0.5s ease forwards;
+  animation-delay: 1s;
+}
+
+#home h1:nth-child(1) {
+  animation-delay: 1s;
+}
+
+#home h1:nth-child(2) {
+  animation-delay: 2s;
+}
+
+#home h1:nth-child(3) {
+  animation: text_reveal_name 0.5s ease forwards;
+  animation-delay: 3s;
+}
+
+#home h1 span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: #ea52b0;
+  animation: text_reveal_box 1s ease;
+  animation-delay: 0.5s;
+}
+
+#home h1:nth-child(1) span {
+  animation-delay: 0.5s;
+}
+
+#home h1:nth-child(2) span {
+  animation-delay: 1.5s;
+}
+
+#home h1:nth-child(3) span {
+  animation-delay: 2.5s;
+}
+
+/* Keyframes */
+@keyframes navLinesPulse {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.4);
+  }
+}
+
+@keyframes text_reveal_box {
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+
+@keyframes text_reveal {
+  100% {
+    color: white;
+  }
+}
+
+@keyframes text_reveal_name {
+  100% {
+    color: #E6C3C3'
+    font-weight: 500;
+  }
+}
+/* End Keyframes */
