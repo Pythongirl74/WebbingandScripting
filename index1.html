@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jessie Emeshili's Portfolio</title>
+    <link rel="stylesheet" href="styles-mobile.css" media="screen and (max-width: 767px)">
+    <link rel="stylesheet" href="styles-tablet.css" media="screen and (min-width: 768px) and (max-width: 1023px)">
+    <link rel="stylesheet" href="styles-laptop.css" media="screen and (min-width: 1024px)">
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="container">
+            <div>
+                <h1 class="major">Hello, my name<br /> is Jessie Emeshili</h1>
+                <p>Welcome to my<strong> Portfolio</strong>. Here you'll find my projects and my contact info. Feel free
+                    to reach out to me :)</p>
+                <br>
+                <a href="#projects" class="btn">Check out my work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="image-container">
+                <!--<img src="C:\Users\User\Desktop\Jessie web dev\IMG_0199.PNG" alt="Profile Picture">-->
+            </div>
+            <div class="content">
+                <div class="text-box">
+                    <h1 class="major">About Me</h1>
+                    <p><h5>Greetings! I am a passionate second-year student deeply immersed in the captivating world of Networking and IT Security. Born from my fervent curiosity about the intricate web of digital communication and the challenge of safeguarding it, my journey into the realm of IT security has been nothing short of exhilarating.
+
+                        In my quest for knowledge, I've delved into the complexities of network architecture, diving into the nuances of protocols and encryption methods. Understanding the pulse of data transfer and the vulnerabilities within, I've explored advanced cybersecurity techniques, learning to anticipate threats before they even knock on the door.
+                        
+                        What excites me the most is the dynamic nature of this field. Every day, technology evolves, and with it, the strategies of hackers. As a second-year enthusiast, I relish the ever-changing landscape of IT security. From mastering the art of firewalls to dissecting the intricacies of penetration testing, I find joy in staying one step ahead in this digital chess game.
+                        
+                        My passion for networking extends beyond the theoretical realm. I actively participate in hackathons, engaging in ethical hacking challenges that test my skills under pressure. Through collaborative projects and real-world simulations, I've honed my abilities to fortify networks, ensuring seamless connectivity while fortifying digital fortresses against potential cyber threats.
+                        
+                        In essence, I am not just a student; I am an IT security sentinel, a guardian of digital pathways, and a seeker of innovative solutions. My journey in networking and IT security is a thrilling adventure, one where every challenge becomes an opportunity to learn and grow. I look forward to contributing my knowledge and passion to the ever-evolving world of technology, making the digital sphere safer, one encrypted byte at a time.
+                        
+                        </h5></p>
+                </div>
+                <div class="video">
+                    <video width="600" height="600" controls>
+                        <source src="C:\Users\User\Pictures\KAMG7577.MP4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="project-box">
+                <section>Python</section>
+                <p>
+                    <h4>Project: Face Mask Detector (2020)</h4>
+                    In 2020, I embarked on an innovative project that combined my passion for technology and public
+                    health: a Face Mask Detector using Python. In the midst of the global pandemic, I saw an opportunity
+                    to contribute to public safety. Leveraging Python's powerful libraries like OpenCV and TensorFlow, I
+                    developed a sophisticated system capable of real-time face detection and mask recognition. The
+                    application utilized deep learning algorithms to accurately identify whether a person was wearing a
+                    face mask or not. This project not only honed my programming skills but also reinforced the importance
+                    of technology in addressing real-world challenges, making a positive impact on our community during a
+                    critical time.
+                </p>
+            </div>
+            <div class="project-box">
+                <section>Networking</section>
+                <p>
+                    <h4>Portfolio Website: HTML & CSS Mastery</h4>
+                    Creating my portfolio website was a transformative journey into the realm of web development. Armed
+                    with HTML and CSS, I crafted an aesthetically pleasing and user-friendly digital space that showcases
+                    my skills and projects. Through meticulous design and layout, I curated a portfolio that not only
+                    reflects my expertise but also engages visitors effectively. HTML provided the backbone, structuring
+                    content and ensuring accessibility, while CSS brought life to the site, shaping its visual appeal and
+                    responsiveness. This project taught me the art of storytelling through design, allowing me to convey
+                    my professional journey and achievements in a visually compelling manner. Through this portfolio, I
+                    not only express my abilities but also connect with the world, opening doors to new opportunities and
+                    collaborations.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="form-container">
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Cell No.:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+                    <small>Enter a 10-digit phone number</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="comments">Comments:</label>
+                    <textarea id="comments" name="comments" rows="4" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <div id="footer">
+        <div class="footer container">
+            <h2>Thank you for visiting my webpage</h2>
+            <p>Reach out: jessie.emeshili@ontariotechu.net</p>
+            <p>Copyright 2023 Jessie Emeshili. All rights reserved</p>
+        </div>
+    </div>
+</body>
+
+</html>
